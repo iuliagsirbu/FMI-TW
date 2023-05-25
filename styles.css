@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
+}
+
+.top{
+    background-color: #1F2937;
+    height: 500px;
+    /* border: 5px solid red; */
+}
+
+/* .header{
+    font-size: 24px;
+    color: #F9FAF8;
+} */
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.links, .left p, .right{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.left h1{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+.navbar{
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: center;
+    padding-top: 20px;
+    /* border: 2px solid blue; */
+}
+
+.header{
+    /* border: 2px solid green; */
+    width: 100%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Initially hide the element */
+  transition: opacity 0.5s ease-in-out; /* Add transition effect */
+}
+
+.links.show {
+  opacity: 1; /* Show the element */
+}
+
+.links p {
+  transform: translateY(-20px); /* Move the text up */
+  opacity: 0; /* Initially hide the text */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add transition effect */
+}
+
+.links.show p {
+  transform: translateY(0); /* Move the text to its original position */
+  opacity: 1; /* Show the text */
+}
+
+/* Add animation to the first paragraph */
+.links.show p:nth-child(1) {
+  animation: fadeInDown 0.5s ease-in-out 0.5s forwards; /* Start the animation after 0.5s delay */
+}
+
+/* Add animation to the second paragraph */
+.links.show p:nth-child(2) {
+  animation: fadeInDown 0.5s ease-in-out 1s forwards; /* Start the animation after 1s delay */
+}
+
+/* Add animation to the third paragraph */
+.links.show p:nth-child(3) {
+  animation: fadeInDown 0.5s ease-in-out 1.5s forwards; /* Start the animation after 1.5s delay */
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.heromain{
+    /* padding: 100px 150px 0px 150px; */
+    justify-content: center;
+    height: 80%;
+    align-items: center;
+    display: flex;
+    /* border: 2px solid orange; */
+}
+
+.wrap-heromain{
+    display: flex;
+    padding: 0px 150px;
+    height: 250px;
+}
+
+.left{
+    /* border: 2px solid green; */
+    width: 50%;
+    padding-right: 15px;
+}
+
+.left p{
+    padding: 8px 0px 25px 0px;
+}
+
+.left button{
+    background-color: #3882F6;
+    border: none;
+    padding: 6px 34px;
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.left button:hover{
+    background-color: #F9FAF8;
+    color: #3882F6;
+}
+
+.right > img{
+    /* border: 2px solid blue; */
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.topmid > h2{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    padding: 40px 0px;
+    /* border: 2px solid khaki */
+}
+
+.box{
+    width: 180px;
+    height: 180px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+}
+
+.topmid{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500px;
+    /* border: 5px solid orange; */
+}
+
+.boxes{
+    display: flex;
+    /* border: 3px solid aqua; */
+    justify-content: space-between;
+    width: 70%;
+    text-align: center;
+}
+
+.boxes p{
+    font-size: 18px;
+    color: rgb(107, 101, 101)
+}
+
+.boxes .box1, .box2, .box3, .box4{
+    width: 180px;
+    /* border: 3px solid red; */
+}
+
+.box1 > img, .box2 > img, .box3 > img, .box4 > img{
+    width: 200px;
+    height: 200px;
+}
+
+.midmid{
+    background-color: #E5E7EB;
+    /* border: 3px solid orangered; */
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inspirational{
+    /* border: 2px solid blue; */
+    height: 205px;
+    width: 55%;
+}
+
+.quote{
+    font-size: 36px;
+    font-weight: 900;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author{
+    font-size: 24px;
+    font-weight: 900;
+    color: #1F2937;
+    float: right;
+    padding-right: 25px;
+}
+
+.botmid{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid orangered; */
+}
+
+.bluewrap{
+    background-color: #3882F6;
+    width: 100%;
+    height: 45%;
+    margin: 0px 150px;
+    border-radius: 8px;
+    /* border: 3px solid greenyellow; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad .bolder{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ad p{
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.bluewrap > button{
+    background-color: transparent;
+    border: 2px solid #F9FAF8;
+    padding: 6px 34px;
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.bluewrap > button:hover{
+    background-color: #F9FAF8;
+    color: #3882F6;
+}
+
+.ad{
+    /* border: 3px solid blue; */
+    width: 65%;
+}
+
+.footer{
+    background-color: #1F2937;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p{
+    font-size: 18px;
+    color:#F9FAF8;
+    font-weight: 400;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: 2px solid #F9FAF8;
+    padding: 6px 34px;
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top:1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #F9FAF8;
+    color: #3882F6;
+}
+
