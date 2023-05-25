@@ -401,7 +401,6 @@
    }
 
    .midmid{
-    border: 2px solid orange;
     height: 600px;
    }
 
@@ -417,7 +416,6 @@
    }
 
    .inspirational{
-    border: 2px solid blue;
     width:100%;
     height: 100%;
    }
@@ -435,4 +433,77 @@
        font-size: 14px;
    }
 
+}
+
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container textarea,
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-container input[type="number"] {
+    width: 60px;
+}
+
+.form-container input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #3882F6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color:white;
+    color:#3882F6;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+}
+
+.user-bar {
+    background: #3882F6;
+    display: flex;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.user-bar .message {
+    flex: 1;
+    min-width: 0;
+}
+
+.feedback {
+    margin-top: 20px;
+}
+
+.feedback-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
 }
